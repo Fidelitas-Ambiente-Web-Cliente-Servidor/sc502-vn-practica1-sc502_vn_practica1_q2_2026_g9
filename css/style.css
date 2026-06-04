@@ -1,6 +1,6 @@
 :root {
-  --color-principal: #1e3a8a;
-  --color-secundario: #38bdf8;
+  --color-principal: #279904;
+  --color-secundario: #8cbe00;
   --color-fondo: #f8fafc;
   --color-texto: #1f2937;
   --color-blanco: #ffffff;
@@ -41,7 +41,7 @@ body {
 }
 .navbar a.active,
 .navbar a:hover {
-  color: var(--color-secundario);
+
 }
 .footer {
   background-color: var(--color-principal);
