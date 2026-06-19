@@ -28,112 +28,18 @@
 
     <section class="search-section">
       <div class="search-bar">
-        <input type="text" placeholder="Buscar curso por nombre o categoría...">
+        <input type="text" id="buscador" placeholder="Buscar curso por nombre o categoría...">
       </div>
     </section>
 
-    <section class="section" id="categoria-web">
-      <h2 class="categoria-titulo">
-        <span class="categoria-badge">Desarrollo Web</span>
-      </h2>
-
-      <div class="cards">
-
-        <article class="card">
-          <img src="images/Html_Css.jpg" alt="HTML y CSS">
-          <div class="card-body">
-            <span class="badge badge-web">Desarrollo Web</span>
-            <h3>HTML y CSS</h3>
-            <p>Aprende a construir páginas web modernas, semánticas y con diseño responsive desde cero.</p>
-            <div class="card-meta">
-              <span> 40 horas</span>
-              <span class="precio">₡15,000</span>
-            </div>
-            <a href="cursos.html" class="btn-card">Ver más</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="images/JS.png" alt="JavaScript Básico">
-          <div class="card-body">
-            <span class="badge badge-web">Desarrollo Web</span>
-            <h3>JavaScript Básico</h3>
-            <p>Domina la lógica de programación y aprende a hacer tus sitios web interactivos y dinámicos.</p>
-            <div class="card-meta">
-              <span> 50 horas</span>
-              <span class="precio">₡18,000</span>
-            </div>
-            <a href="cursos.html" class="btn-card">Ver más</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="images/bootstrap.png" alt="Bootstrap">
-          <div class="card-body">
-            <span class="badge badge-web">Desarrollo Web</span>
-            <h3>Bootstrap y Diseño Responsive</h3>
-            <p>Crea layouts modernos y adaptables a cualquier dispositivo usando el framework Bootstrap.</p>
-            <div class="card-meta">
-              <span> 30 horas</span>
-              <span class="precio">₡14,000</span>
-            </div>
-            <a href="cursos.html" class="btn-card">Ver más</a>
-          </div>
-        </article>
-
+    <section class="section">
+      <div class="cards" id="filtros-categoria" style="margin-bottom: 30px;">
+        <button class="btn-card filtro-btn" data-categoria="todas">Todas</button>
+        <button class="btn-card filtro-btn" data-categoria="Desarrollo Web">Desarrollo Web</button>
+        <button class="btn-card filtro-btn" data-categoria="Datos y Programación">Datos y Programación</button>
       </div>
-    </section>
 
-    <section class="section" id="categoria-datos">
-      <h2 class="categoria-titulo">
-        <span class="categoria-badge badge-datos-titulo">Datos y Programación</span>
-      </h2>
-
-      <div class="cards">
-
-        <article class="card">
-          <img src="images/Sql.png" alt="SQL">
-          <div class="card-body">
-            <span class="badge badge-datos">Datos y Programación</span>
-            <h3>Bases de Datos con SQL</h3>
-            <p>Aprende a diseñar, consultar y administrar bases de datos relacionales utilizando SQL.</p>
-            <div class="card-meta">
-              <span> 45 horas</span>
-              <span class="precio">₡17,000</span>
-            </div>
-            <a href="cursos.html" class="btn-card">Ver más</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="images/python.png" alt="Python">
-          <div class="card-body">
-            <span class="badge badge-datos">Datos y Programación</span>
-            <h3>Python para Principiantes</h3>
-            <p>Inicia tu camino en la programación con Python, uno de los lenguajes más versátiles del mundo.</p>
-            <div class="card-meta">
-              <span> 60 horas</span>
-              <span class="precio">₡20,000</span>
-            </div>
-            <a href="cursos.html" class="btn-card">Ver más</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="images/IA.jpg" alt="Inteligencia Artificial">
-          <div class="card-body">
-            <span class="badge badge-datos">Datos y Programación</span>
-            <h3>Introducción a la IA</h3>
-            <p>Conoce los conceptos fundamentales de la inteligencia artificial y sus aplicaciones en el mundo real.</p>
-            <div class="card-meta">
-              <span> 35 horas</span>
-              <span class="precio">₡22,000</span>
-            </div>
-            <a href="cursos.html" class="btn-card">Ver más</a>
-          </div>
-        </article>
-
-      </div>
+      <div class="cards" id="contenedor-cursos"></div>
     </section>
 
   </main>
@@ -143,5 +49,6 @@
     <p>Proyecto académico - Universidad Fidélitas</p>
   </footer>
 
+  <script src="js/cursos.js"></script>
 </body>
 </html>
