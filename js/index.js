@@ -1,3 +1,4 @@
+/*
 const cursosDestacados = [
   {
     nombre: "HTML y CSS",
@@ -43,3 +44,5 @@ function mostrarCursosDestacados() {
 }
 
 mostrarCursosDestacados();
+
+*/
