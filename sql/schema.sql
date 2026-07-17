@@ -35,3 +35,27 @@ VALUES
     'Adapta tus páginas web para computadoras, tabletas y teléfonos.',
     'Desarrollo Web'
 );
+
+
+CREATE TABLE IF NOT EXISTS cursos (
+    id          INT AUTO_INCREMENT PRIMARY KEY,
+    nombre      VARCHAR(150)  NOT NULL,
+    descripcion TEXT          NOT NULL,
+    categoria   VARCHAR(100)  NOT NULL,
+    duracion    VARCHAR(50)   NOT NULL,
+    precio      VARCHAR(50)   NOT NULL,
+    imagen      VARCHAR(255)  NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+ 
+INSERT INTO cursos (nombre, descripcion, categoria, duracion, precio, imagen) VALUES
+('HTML y CSS', 'Aprende a construir páginas web modernas, semánticas y con diseño responsive desde cero.', 'Desarrollo Web', '40 horas', '₡15,000', 'images/Html_Css.jpg'),
+
+('JavaScript Básico', 'Domina la lógica de programación y aprende a hacer tus sitios web interactivos y dinámicos.', 'Desarrollo Web', '50 horas', '₡18,000', 'images/JS.png'),
+
+('Bootstrap y Diseño Responsive', 'Crea layouts modernos y adaptables a cualquier dispositivo usando el framework Bootstrap.', 'Desarrollo Web', '30 horas', '₡14,000', 'images/bootstrap.png'),
+
+('Bases de Datos con SQL', 'Aprende a diseñar, consultar y administrar bases de datos relacionales utilizando SQL.', 'Datos y Programación', '45 horas', '₡17,000', 'images/Sql.png'),
+
+('Python para Principiantes', 'Inicia tu camino en la programación con Python, uno de los lenguajes más versátiles del mundo.', 'Datos y Programación', '60 horas', '₡20,000', 'images/python.png'),
+
+('Introducción a la IA', 'Conoce los conceptos fundamentales de la inteligencia artificial y sus aplicaciones en el mundo real.', 'Datos y Programación', '35 horas', '₡22,000', 'images/IA.jpg');
