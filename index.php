@@ -13,14 +13,14 @@ switch ($controllerName) {
         $controller = new IndexController($connection);
         break;
 
+    case 'cursos':
+        require_once __DIR__ . '/controllers/CursosController.php';
+        $controller = new CursosController($connection);
+        break;
+
     default:
         http_response_code(404);
         exit;
-}
-
-if (!method_exists($controller, $action)) {
-    http_response_code(404);
-    exit;
 }
 
 $controller->$action();
