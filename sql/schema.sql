@@ -59,3 +59,57 @@ INSERT INTO cursos (nombre, descripcion, categoria, duracion, precio, imagen) VA
 ('Python para Principiantes', 'Inicia tu camino en la programación con Python, uno de los lenguajes más versátiles del mundo.', 'Datos y Programación', '60 horas', '₡20,000', 'images/python.png'),
 
 ('Introducción a la IA', 'Conoce los conceptos fundamentales de la inteligencia artificial y sus aplicaciones en el mundo real.', 'Datos y Programación', '35 horas', '₡22,000', 'images/IA.jpg');
+
+CREATE TABLE IF NOT EXISTS profesores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(150) NOT NULL,
+    especialidad VARCHAR(150) NOT NULL,
+    descripcion TEXT NOT NULL,
+    foto VARCHAR(255) NOT NULL,
+    correo VARCHAR(150) NOT NULL,
+    cursos VARCHAR(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO profesores
+(nombre, especialidad, descripcion, foto, correo, cursos)
+VALUES
+(
+    'Laura Méndez',
+    'Desarrollo Front-End',
+    'Especialista en diseño web responsive y experiencia de usuario.',
+    'images/Html_Css.jpg',
+    'laura@academia.com',
+    'HTML, CSS y Diseño Responsive'
+),
+(
+    'Carlos Ramírez',
+    'JavaScript y React',
+    'Desarrollador con experiencia en aplicaciones web modernas.',
+    'images/JS.png',
+    'carlos@academia.com',
+    'JavaScript, React y Node.js'
+),
+(
+    'Ana González',
+    'Python y Back-End',
+    'Apasionada por la automatización y el desarrollo de APIs.',
+    'images/Python.png',
+    'ana@academia.com',
+    'Python, Django y Flask'
+),
+(
+    'David Vargas',
+    'Bases de Datos',
+    'Experto en modelado de datos y consultas SQL avanzadas.',
+    'images/Sql.png',
+    'david@academia.com',
+    'SQL, Oracle y Modelado de Datos'
+),
+(
+    'Sofía Herrera',
+    'Inteligencia Artificial',
+    'Especialista en aprendizaje automático y aplicaciones de inteligencia artificial.',
+    'images/IA.jpg',
+    'sofia@academia.com',
+    'Inteligencia Artificial y Machine Learning'
+);

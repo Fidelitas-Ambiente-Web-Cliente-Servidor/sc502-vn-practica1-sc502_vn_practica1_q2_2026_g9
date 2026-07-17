@@ -1,3 +1,5 @@
+/*
+Todo el código anterior de profesores.js queda aquí dentro.
 const profesores = [
   {
     nombre: "Laura Méndez",
@@ -61,3 +63,6 @@ profesores.forEach((profesor, index) => {
     modal.show();
   });
 });
+
+Este código podrá reutilizarse en la Tarea 4.
+*/
